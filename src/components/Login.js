@@ -1,12 +1,14 @@
 import { useState, useRef } from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../utils/Firebase.js";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [isSignInForm, setIssignForm] = useState(true);
   const [errormessage, seterrormessage] = useState(null);
+  const navigate =useNavigate();
   const email = useRef(null);
   const password = useRef(null);
   const toggleSignInForm = () => {
@@ -20,23 +22,30 @@ const Login = () => {
       createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log("oohhh1");
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          console.log("oohhh2");
           seterrormessage(errorCode + "-" + errorMessage);
         });
     }
     else{
-
+      signInWithEmailAndPassword(auth, email.current.value, password.current.value)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+         
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        seterrormessage(errorCode + "-" + errorMessage);
+      });
     }
   }
   return (
     <div>
-      <Header />
+      <Header/>
       <div className="relative flex justify-center items-center h-screen">
         <img
           className="absolute w-full h-full object-cover"
@@ -44,7 +53,7 @@ const Login = () => {
           alt="background"
         />
         <div className="relative w-full   bg-black/80 max-w-80 mt-10">
-          <form onSubmit={(e) => e.preventDefault()} className="relativerounded-lg flex flex-col gap-4 p-6 text-white">
+          <form onSubmit={(e) => e.preventDefault()} className="relative rounded-lg flex flex-col gap-4 p-6 text-white">
             <h1 className="font-bold text-xl mt-6 mx-4">{isSignInForm ? "Sign In " : "Sign Up"}</h1>
             <input
               ref={email}
@@ -67,6 +76,5 @@ const Login = () => {
       </div>
     </div>
   );
-};
-
+}; 
 export default Login;
