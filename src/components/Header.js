@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser,removeUser } from "../utils/userSlice";
-import {toggleGptSearchView} from "../utils/gptSlice";
+import {setDataNull, toggleGptSearchView} from "../utils/gptSlice";
 const Header = () => {
     const navigate = useNavigate();
     const dispatch=useDispatch();
@@ -34,6 +34,7 @@ const Header = () => {
     }, []);
     const handleGptSearchClick=()=>{
         dispatch(toggleGptSearchView());
+        dispatch(setDataNull());
     }
     return (
         <div className="absolute w-screen  px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
