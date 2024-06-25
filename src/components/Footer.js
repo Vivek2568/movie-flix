@@ -19,7 +19,7 @@ const FooterPart = () => {
                         <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-white hover:underline text-md"> | Privacy Policy |</h1>
                     </div>
                     <div className="mt-8 h-4 w-24">
-                        <img src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"></img>
+                        <img src="https://github.com/Krishan-Kant123/flicx/blob/main/src/assets/t.png?raw=true"></img>
                     </div>
                     <div className="flex flex-row items-center justify-center mb-8 gap-3 mt-8">
                         <div><a href="https://www.linkedin.com/in/vivek-prajapati-82b09825b/"><FaLinkedin className="text-4xl hover:cursor-pointer  hover:text-white text-navcol-300" /></a></div>
