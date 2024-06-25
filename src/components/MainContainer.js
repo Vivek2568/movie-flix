@@ -13,11 +13,11 @@ const MainContainer = () => {
         <div className="">
             <div className="hidden sm:flex sm:relative sm:w-screen">
                 <VideoBackground movieId={id} className="absolute inset-0 z-0" />
-                <VideoTitle title={original_title} overView={overview} className="absolute z-10" />
+                <VideoTitle title={original_title} overView={overview} className="absolute z-10 w-[30%]" />
             </div>
             <div className="block sm:hidden">
                 <VideoBackground movieId={id} />
-                <div className="h-[30%]">
+                <div className="">
                 <VideoTitle  title={original_title} overView={overview} />
                 </div>
             </div>

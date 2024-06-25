@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter, useNavigate } from "react-router-dom";
 import Browse from "./Browse";
 import Login from "./Login";
+import MovieHero from "./MovieShow";
 const Body = () => {
   
     const appRouter = createBrowserRouter([
@@ -11,6 +12,10 @@ const Body = () => {
         {
             path:"/browse",
             element:<Browse/>
+        },
+        {
+          path:"movie/:id",
+          element:<MovieHero/>
         }
     ]);
  
