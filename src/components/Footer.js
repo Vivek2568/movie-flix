@@ -32,7 +32,7 @@ const FooterPart = () => {
                     <div className="flex flex-col items-center  mb-8">
                         <div className="flex flex-col items-center ">
                             <h1 className="text-navcol-300 text-center text-sm">Copyright 2022 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.</h1>
-                            <h1 className="text-navcol-300 text-center text-sm">The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.</h1>
+                            <h1 className="text-navcol-300 text-center text-sm">The content and images used on this site are copyright protected and copyrights vests with the respective owners.</h1>
                         </div>
                     </div>
                 </div>

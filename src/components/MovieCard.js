@@ -13,11 +13,11 @@ const MovieCard = ({ posterPath, movieId, moviename, date, color }) => {
             <div>
                 {!color && <div>
                     <h3 className="text-white font-bold pl-[5%]">{moviename}</h3>
-                    <h5 className="text-white pl-[5%]">{date}</h5>
+                    <p className="text-white text-sm pl-[5%]">{date}</p>
                 </div>}
                 {color && <div>
                     <h3 className="text-black font-bold pl-[5%]">{moviename}</h3>
-                    <h5 className="text-black pl-[5%]">{date}</h5>
+                    <p className="text-black text-sm pl-[5%]">{date}</p>
                 </div>}
 
             </div>
