@@ -39,13 +39,13 @@ const GptBarSearch = () => {
         <div className="pt-[20%] md:pt-[10%] flex justify-center">
             <form className="w-full max-w-lg grid grid-cols-12 gap-2 px-4 sm:px-0" onSubmit={(e) => e.preventDefault()}>
                 <input 
-                    ref={    searchText}
+                    ref={searchText}
                     type="text"
                     className="col-span-9 py-2 border-2 border-black rounded-md"
-                    placeholder="    What would you like to watch today?"
+                    placeholder="    What would you like to watch today ?"
                 />
                 <button
-                    className="col-span-3 text-xl bg-red-500 border-2 border-black rounded-md py-2"
+                    className="col-span-3 text-lg font-bold text-white bg-red-600 border-2 border-black rounded-md py-2 hover:bg-green-500"
                     onClick={handleGptSearchClick}
                 >
                     Search

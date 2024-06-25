@@ -88,7 +88,7 @@ function MovieHero({ props }) {
                     <h1 className="font-bold text-xl sm:text-2xl my-4 ml-4">Cast</h1>
                     <div className=" gap-6 w-full px-8 flex overflow-x-scroll">
                         {castdetails?.map((castdetail) => (
-                            <Cast
+                            <Cast key={castdetail.original_name}
                                 image={`https://image.tmdb.org/t/p/original/${castdetail.profile_path}`}
                                 castName={castdetail.original_name}
                                 role={castdetail.character}

@@ -12,22 +12,22 @@ const FooterPart = () => {
                 <div className=" flex flex-col items-center mt-4">
                     <h1 className="text-black font-bold text-md mx-auto"> Help </h1>
                     <div className="md:flex flex-row flex flex-wrap md:items-center  justify-center  gap-2">
-                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-white hover:underline text-md">| About Us | </h1>
-                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-white hover:underline text-md"> | Contact Us | </h1>
-                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-white hover:underline text-md"> | FAQs | </h1>
-                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-white hover:underline text-md"> | Terms and Conditions | </h1>
-                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-white hover:underline text-md"> | Privacy Policy |</h1>
+                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-fuchsia-600 hover:underline text-md">| About Us | </h1>
+                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-fuchsia-600 hover:underline text-md"> | Contact Us | </h1>
+                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-fuchsia-600 hover:underline text-md"> | FAQs | </h1>
+                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-fuchsia-600 hover:underline text-md"> | Terms and Conditions | </h1>
+                        <h1 className="text-navcol-300 hover:cursor-pointer  hover:text-fuchsia-600 hover:underline text-md"> | Privacy Policy |</h1>
                     </div>
                     <div className="mt-8 h-4 w-24">
                         <img src="https://github.com/Krishan-Kant123/flicx/blob/main/src/assets/t.png?raw=true"></img>
                     </div>
                     <div className="flex flex-row items-center justify-center mb-8 gap-3 mt-8">
-                        <div><a href="https://www.linkedin.com/in/vivek-prajapati-82b09825b/"><FaLinkedin className="text-4xl hover:cursor-pointer  hover:text-white text-navcol-300" /></a></div>
-                        <div><a href="https://www.instagram.com/25vivek68/"><FaTwitter className="text-4xl hover:cursor-pointer  hover:text-white text-navcol-300" /></a> </div>
-                        <div><a href="https://www.instagram.com/25vivek68/"><FaFacebookF className="text-4xl hover:cursor-pointer hover:text-white text-navcol-300" /></a></div>
-                        <div><a href="https://www.instagram.com/25vivek68/"><FaInstagram className="text-4xl hover:cursor-pointer hover:text-white text-navcol-300" /></a></div>
-                        <div><a href="https://www.youtube.com/channel/UC2jsw-J1fTl2Trv0TOcXR-w"><FaYoutube className="text-4xl hover:cursor-pointer hover:text-white text-navcol-300" /></a></div>
-                        <div><a href="https://www.linkedin.com/in/vivek-prajapati-82b09825b/"><FaLinkedin className="text-4xl hover:cursor-pointer  hover:text-white text-navcol-300" /></a></div>
+                        <div><a href="https://www.linkedin.com/in/vivek-prajapati-82b09825b/"><FaLinkedin className="text-4xl hover:cursor-pointer  hover:text-fuchsia-600 text-navcol-300" /></a></div>
+                        <div><a href="https://www.instagram.com/25vivek68/"><FaTwitter className="text-4xl hover:cursor-pointer  hover:text-fuchsia-600 text-navcol-300" /></a> </div>
+                        <div><a href="https://www.instagram.com/25vivek68/"><FaFacebookF className="text-4xl hover:cursor-pointer hover:text-fuchsia-600 text-navcol-300" /></a></div>
+                        <div><a href="https://www.instagram.com/25vivek68/"><FaInstagram className="text-4xl hover:cursor-pointer hover:text-fuchsia-600 text-navcol-300" /></a></div>
+                        <div><a href="https://www.youtube.com/channel/UC2jsw-J1fTl2Trv0TOcXR-w"><FaYoutube className="text-4xl hover:cursor-pointer hover:text-fuchsia-600 text-navcol-300" /></a></div>
+                        <div><a href="https://www.linkedin.com/in/vivek-prajapati-82b09825b/"><FaLinkedin className="text-4xl hover:cursor-pointer  hover:text-fuchsia-600 text-navcol-300" /></a></div>
                     </div>
                     <div className="flex flex-col items-center  mb-8">
                         <div className="flex flex-col items-center ">
