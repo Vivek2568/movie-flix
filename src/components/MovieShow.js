@@ -9,10 +9,9 @@ import FooterPart from "./Footer";
 function MovieHero({ props }) {
     props = useParams();
     const RecommendData = useGetrecommended(props.id);
-    //console.log(RecommendData);
+    const black=true;
     const [moviedetails, setmoviedetail] = useState(null);
     const [castdetails, setcastdetails] = useState(null);
-    // let data = null;
     const data = async () => {
         const detail = await fetch('https://api.themoviedb.org/3/movie/' + props.id + '?language=en-US',
             API_OPTIONS);
@@ -99,7 +98,7 @@ function MovieHero({ props }) {
                 </div>
                 <div className="mx-[12%] mt-[2%]">
                     <h1 className="font-bold text-xl sm:text-2xl   ml-4">Recommended Movies</h1>
-                    <MovieList title={"Recommended Movies"} movies={RecommendData} />
+                    <MovieList title={"Recommended Movies"} movies={RecommendData} text_color={black}/>
                 </div>
                 <div className="bg-black"><FooterPart /></div>
             </div>
