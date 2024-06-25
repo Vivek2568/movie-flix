@@ -18,7 +18,7 @@ const MainContainer = () => {
             <div className="block sm:hidden">
                 <VideoBackground movieId={id} />
                 <div className="">
-                <VideoTitle  title={original_title} overView={overview} />
+                <VideoTitle  title={original_title} overView={overview}  />
                 </div>
             </div>
         </div>

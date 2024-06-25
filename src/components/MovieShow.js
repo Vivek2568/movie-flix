@@ -5,10 +5,11 @@ import { API_OPTIONS } from "../utils/constant";
 import Cast from "./Cast";
 import MovieList from "./MovieList";
 import useGetrecommended from "../hooks/useRecommendedMovies";
+import FooterPart from "./Footer";
 function MovieHero({ props }) {
     props = useParams();
-   const RecommendData= useGetrecommended(props.id);
-   //console.log(RecommendData);
+    const RecommendData = useGetrecommended(props.id);
+    //console.log(RecommendData);
     const [moviedetails, setmoviedetail] = useState(null);
     const [castdetails, setcastdetails] = useState(null);
     // let data = null;
@@ -85,7 +86,7 @@ function MovieHero({ props }) {
                     </div>
                 </div >
                 <div className="mx-[12%] mt-[2%]">
-                    <h1 className="font-bold text-xl sm:text-2xl my-4 ml-10">Cast</h1>
+                    <h1 className="font-bold text-xl sm:text-2xl my-4 ml-4">Cast</h1>
                     <div className=" gap-6 w-full px-8 flex overflow-x-scroll">
                         {castdetails?.map((castdetail) => (
                             <Cast
@@ -97,9 +98,10 @@ function MovieHero({ props }) {
                     </div>
                 </div>
                 <div className="mx-[12%] mt-[2%]">
-                    <h1 className="font-bold text-xl sm:text-2xl my-4  ml-10">Recommended Movies</h1>
+                    <h1 className="font-bold text-xl sm:text-2xl   ml-4">Recommended Movies</h1>
                     <MovieList title={"Recommended Movies"} movies={RecommendData} />
                 </div>
+                <div className="bg-black"><FooterPart /></div>
             </div>
         </>
     )

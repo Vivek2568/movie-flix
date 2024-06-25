@@ -8,7 +8,6 @@ const useGetrecommended = (id) => {
             API_OPTIONS);
         const json = await data?.json();
         setRecommended(json.results);
-        console.log(json.results);
 
     };
     useEffect(() => {
