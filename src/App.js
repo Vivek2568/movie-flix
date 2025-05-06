@@ -3,9 +3,9 @@ import Body from "./components/Body";
 import Appstore from "./utils/Appstore";
 function App() {
   return (
-      <Provider store={Appstore} > 
-      <Body/>
-      </Provider>
+    <Provider store={Appstore} >
+      <Body />
+    </Provider>
   );
 }
 

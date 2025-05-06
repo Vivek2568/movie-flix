@@ -22,7 +22,7 @@ const GptBarSearch = () => {
     const handleGptSearchClick = () => {
         async function run() {
             const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-            const prompt = "show only 5 name of result of " + searchText.current.value + " and give only name For example: [Name1, Name2, Name3, Name4, Name5]";
+            const prompt = "show only 5 name of result of " + searchText.current.value + " and give only name For example: Name1, Name2, Name3, Name4, Name5";
             const result = await model.generateContent(prompt);
             const response = await result.response;
             const text = response.text();
